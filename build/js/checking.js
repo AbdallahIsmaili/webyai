@@ -70,6 +70,10 @@ var navbarPage2 = document.getElementById('navbarPage2');
 var navbarPage3 = document.getElementById('navbarPage3');
 var navbarPage4 = document.getElementById('navbarPage4');
 var navbarPage5 = document.getElementById('navbarPage5');
+var isActiveButton = document.getElementById('isActiveButton');
+var navbarActiveLink = document.getElementById('navbarActiveLink');
+var activeLinkContent = document.getElementById('activeLinkContent');
+var activeLinkColor = document.getElementById('activeLinkColor');
 
 websiteNameInput.addEventListener('input', function() {
     submitForm();
@@ -89,6 +93,15 @@ isNavbarLogo.addEventListener('change', function() {
         navbarLogoFileInput.style.display = 'block';
     } else {
         navbarLogoFileInput.style.display = 'none';
+    }
+    submitForm();
+});
+
+isActiveButton.addEventListener('change', function() {
+    if (isActiveButton.checked) {
+        navbarActiveLink.style.display = 'block';
+    } else {
+        navbarActiveLink.style.display = 'none';
     }
     submitForm();
 });
@@ -114,6 +127,14 @@ navbarPage4.addEventListener('input', function() {
 });
 
 navbarPage5.addEventListener('input', function() {
+    submitForm();
+});
+
+activeLinkContent.addEventListener('input', function() {
+    submitForm();
+});
+
+activeLinkColor.addEventListener('input', function() {
     submitForm();
 });
 

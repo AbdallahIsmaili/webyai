@@ -2,7 +2,7 @@
 
 $navbarPagesArray = [];
 
-function generateNavbar($websiteName, $includeLogo = false, $logoUploaded = false, $navbarLogoFile, $navbarPagesArray) {
+function generateNavbar($websiteName, $includeLogo = false, $logoUploaded = false, $navbarLogoFile, $navbarPagesArray, $buttonChecked = false,  $activeLinkContent, $activeLinkColor) {
     $navbarHTML = '<nav class="flex justify-between items-center my-3 p-6">
                         <div class="logo flex justify-between items-center ">';
     
@@ -27,14 +27,19 @@ function generateNavbar($websiteName, $includeLogo = false, $logoUploaded = fals
                         </li>';
     }
 
-    $navbarHTML .= '
-                            <li>
-                                <a href="build/builder.php" class="text-white py-2 px-10 bg-gray-900 rounded-lg hover:bg-gray-700 transition ease-in-out duration-500">Get started</a>
-                            </li>
-                        </ul>
 
-                    </nav>';
+    if($buttonChecked){
 
+        $navbarHTML .= '
+                <li>
+                    <a style="background: '. $activeLinkColor .';" href="build/builder.php" class="text-white py-2 px-10 rounded-lg hover:bg-gray-700 transition ease-in-out duration-500">'.$activeLinkContent.'</a>
+                </li>';
+    }
+
+    $navbarHTML .= ' </ul>
+        </nav>';
+
+    
     return $navbarHTML;
 }
 
@@ -51,6 +56,10 @@ $navbarPage2 = null;
 $navbarPage3 = null;
 $navbarPage4 = null;
 $navbarPage5 = null;
+$activeLinkContent = 'Get started';
+$activeLinkColor = null;
+
+$buttonChecked = false;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['website_name'])) {
     
@@ -58,6 +67,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['website_name'])) {
         $websiteName = $_POST['website_name'];
     } else{
         $websiteName =  'WebyAI';
+    }
+    
+    if(isset($_POST['activeLinkContent']) and $_POST['activeLinkContent'] != null){
+        $activeLinkContent = $_POST['activeLinkContent'];
+        $buttonChecked = true;
+    } else{
+        $buttonChecked = false;
+    }
+    
+    if(isset($_POST['activeLinkColor']) and $_POST['activeLinkColor'] != null){
+        $activeLinkColor = $_POST['activeLinkColor'];
+    } else{
+        $activeLinkColor = 'blue';
     }
 
     if(isset($_POST['navbarPage1']) and $_POST['navbarPage1'] != null){
@@ -85,6 +107,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['website_name'])) {
         $navbarPagesArray[] = $navbarPage5;
     } 
 
+
     if (isset($_FILES['navbarLogoFile'])) {
         $file = $_FILES['navbarLogoFile'];
         $targetDirectory = 'uploads/'; 
@@ -108,7 +131,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['website_name'])) {
 
     echo $navbarLogoFile;
 
-    $navbar = generateNavbar($websiteName, true, $logoUploaded, $navbarLogoFile, $navbarPagesArray);
+    $navbar = generateNavbar($websiteName, true, $logoUploaded, $navbarLogoFile, $navbarPagesArray, $buttonChecked, $activeLinkContent, $activeLinkColor);
     echo $navbar;
 }
 

@@ -50,7 +50,7 @@
                     
                     <span class="text-sm opacity-80">Do you need a Navbar?</span>
 
-                    <div class="inline-block py-1 px-6 bg-gray-900 rounded-xl">
+                    <div class="inline-block py-1 px-6 bg-gray-900 rounded-sm">
                         <input type="checkbox" name="isNavbar" id="isNavbar">
                         <span class="text-sm text-white opacity-80 pl-3">Yes</span>
                     </div>
@@ -66,7 +66,7 @@
 
                     </div>
 
-                    <!-- Navbar titles: -->
+                    <!-- Navbar pages: -->
                     <div class="my-6">
 
                         <span class="text-sm opacity-80">Change the pages as you want.</span>
@@ -78,6 +78,26 @@
                             <input type="text" name="navbarPage4" id="navbarPage4" class="border rounded-md p-2 m-2 w-full" placeholder="Pricing">
                             <input type="text" name="navbarPage5" id="navbarPage5" class="border rounded-md p-2 m-2 w-full" placeholder="Members">
                         </div>
+
+                    </div>
+
+                    <!-- Navbar Checkbox: -->
+                    <span class="text-sm opacity-80">Do you need an active button?</span>
+
+                    <div class="inline-block py-1 px-6 bg-gray-900 rounded-sm">
+                        <input type="checkbox" name="isActiveButton" id="isActiveButton">
+                        <span class="text-sm text-white opacity-80 pl-3">Sure</span>
+                    </div>
+
+                    <!-- Navbar links: -->
+                    <div style="display: none;" id="navbarActiveLink">
+                        
+                        <div class="">
+                            <input type="text" name="activeLinkContent" id="activeLinkContent" class="border rounded-md p-2 m-2 w-full" placeholder="Get started">
+                        </div>
+
+                        <span class="text-sm opacity-80 pl-3">Choose the color:</span>
+                        <input class="border w-full rounded-lg" type="color" name="activeLinkColor" id="activeLinkColor">
 
                     </div>
 
