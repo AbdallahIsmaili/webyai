@@ -65,6 +65,10 @@ var webResultDiv = document.getElementById('webResult');
 var navbarBuildingForm = document.getElementById("navbarBuildingForm");
 var isNavbarLogo = document.getElementById('isNavbarLogo');
 var navbarLogoFileInput = document.getElementById('navbarLogoFile');
+var navbarPage1 = document.getElementById('navbarPage1');
+var navbarPage2 = document.getElementById('navbarPage2');
+var navbarPage3 = document.getElementById('navbarPage3');
+var navbarPage4 = document.getElementById('navbarPage4');
 
 websiteNameInput.addEventListener('input', function() {
     submitForm();
@@ -89,6 +93,22 @@ isNavbarLogo.addEventListener('change', function() {
 });
 
 navbarLogoFileInput.addEventListener('change', function() {
+    submitForm();
+});
+
+navbarPage1.addEventListener('input', function() {
+    submitForm();
+});
+
+navbarPage2.addEventListener('input', function() {
+    submitForm();
+});
+
+navbarPage3.addEventListener('input', function() {
+    submitForm();
+});
+
+navbarPage4.addEventListener('input', function() {
     submitForm();
 });
 

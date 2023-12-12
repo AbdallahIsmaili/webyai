@@ -26,7 +26,7 @@
 </head>
 <body class="bg-stone-200">
     
-    <div class="container mx-auto px-4">
+    <div class=" mx-auto px-4">
 
         <div class="bg-white my-3 rounded-xl p-6">
             <span class="font-bold">Welcome here!</span> let's start building your great website.
@@ -72,10 +72,10 @@
                         <span class="text-sm opacity-80">Change the pages as you want.</span>
 
                         <div class="">
-                            <input type="text" name="" id="" class="border rounded-md p-2 m-2 w-full" placeholder="Home">
-                            <input type="text" name="" id="" class="border rounded-md p-2 m-2 w-full" placeholder="About">
-                            <input type="text" name="" id="" class="border rounded-md p-2 m-2 w-full" placeholder="Contact">
-                            <input type="text" name="" id="" class="border rounded-md p-2 m-2 w-full" placeholder="Pricing">
+                            <input type="text" name="navbarPage1" id="navbarPage1" class="border rounded-md p-2 m-2 w-full" placeholder="Home">
+                            <input type="text" name="navbarPage2" id="navbarPage2" class="border rounded-md p-2 m-2 w-full" placeholder="About">
+                            <input type="text" name="navbarPage3" id="navbarPage3" class="border rounded-md p-2 m-2 w-full" placeholder="Contact">
+                            <input type="text" name="navbarPage4" id="navbarPage4" class="border rounded-md p-2 m-2 w-full" placeholder="Pricing">
                         </div>
 
                     </div>
