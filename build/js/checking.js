@@ -74,6 +74,7 @@ var isActiveButton = document.getElementById('isActiveButton');
 var navbarActiveLink = document.getElementById('navbarActiveLink');
 var activeLinkContent = document.getElementById('activeLinkContent');
 var activeLinkColor = document.getElementById('activeLinkColor');
+var navbarBackgroundColor = document.getElementById('navbarBackgroundColor');
 
 websiteNameInput.addEventListener('input', function() {
     submitForm();
@@ -135,6 +136,10 @@ activeLinkContent.addEventListener('input', function() {
 });
 
 activeLinkColor.addEventListener('input', function() {
+    submitForm();
+});
+
+navbarBackgroundColor.addEventListener('input', function() {
     submitForm();
 });
 

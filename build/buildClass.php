@@ -2,8 +2,8 @@
 
 $navbarPagesArray = [];
 
-function generateNavbar($websiteName, $includeLogo = false, $logoUploaded = false, $navbarLogoFile, $navbarPagesArray, $buttonChecked = false,  $activeLinkContent, $activeLinkColor) {
-    $navbarHTML = '<nav class="flex justify-between items-center my-3 p-6">
+function generateNavbar($websiteName, $includeLogo = false, $logoUploaded = false, $navbarLogoFile, $navbarPagesArray, $buttonChecked = false,  $activeLinkContent, $activeLinkColor, $navbarBackgroundColor) {
+    $navbarHTML = '<nav style="background:'. $navbarBackgroundColor .';" class="flex justify-between items-center my-1 p-4 rounded-lg">
                         <div class="logo flex justify-between items-center ">';
     
     if ($logoUploaded == true) {
@@ -58,6 +58,7 @@ $navbarPage4 = null;
 $navbarPage5 = null;
 $activeLinkContent = 'Get started';
 $activeLinkColor = null;
+$navbarBackgroundColor = null;
 
 $buttonChecked = false;
 
@@ -81,6 +82,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['website_name'])) {
     } else{
         $activeLinkColor = 'blue';
     }
+    
+    if(isset($_POST['navbarBackgroundColor']) and $_POST['navbarBackgroundColor'] != null){
+        $navbarBackgroundColor = $_POST['navbarBackgroundColor'];
+    } else{
+        $navbarBackgroundColor = 'blue';
+    }
 
     if(isset($_POST['navbarPage1']) and $_POST['navbarPage1'] != null){
         $navbarPage1 = $_POST['navbarPage1'];
@@ -103,7 +110,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['website_name'])) {
     } 
 
     if(isset($_POST['navbarPage5']) and $_POST['navbarPage5'] != null){
-        $navbarPage4 = $_POST['navbarPage5'];
+        $navbarPage5 = $_POST['navbarPage5'];
         $navbarPagesArray[] = $navbarPage5;
     } 
 
@@ -131,7 +138,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['website_name'])) {
 
     echo $navbarLogoFile;
 
-    $navbar = generateNavbar($websiteName, true, $logoUploaded, $navbarLogoFile, $navbarPagesArray, $buttonChecked, $activeLinkContent, $activeLinkColor);
+    $navbar = generateNavbar($websiteName, true, $logoUploaded, $navbarLogoFile, $navbarPagesArray, $buttonChecked, $activeLinkContent, $activeLinkColor, $navbarBackgroundColor);
     echo $navbar;
 }
 

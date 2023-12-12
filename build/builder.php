@@ -34,7 +34,7 @@
 
         <div class="grid grid-flow-row-dense grid-cols-5 gap-4 my-6 ">
             
-            <div class="h-screen bg-white col-span-2 rounded-lg p-4">
+            <div class="h-full bg-white col-span-2 rounded-lg p-4">
                 <form id="navbarBuildingForm" action="buildClass.php" method="post" enctype="multipart/form-data">
                 
                     <h4 class="text-2xl font-bold">Start by the name:</h4>
@@ -101,10 +101,19 @@
 
                     </div>
 
+
+                    <!-- Navbar Background color: -->
+                    <div id="navbarActiveLink " class="my-6">
+                        <span class="text-lg opacity-80 py-4">Navbar background color?</span>
+                        <input class="border w-full rounded-lg my-3" type="color" value="#f1f5f9" name="navbarBackgroundColor" id="navbarBackgroundColor">
+
+                    </div>
+
                 </form>
+
             </div>
 
-            <div id="webResult" class="bg-white col-span-3 rounded-lg p-6">
+            <div id="webResult" class=" bg-white col-span-3 rounded-lg p-6">
                 
             </div>
 
