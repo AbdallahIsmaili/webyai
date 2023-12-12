@@ -67,7 +67,7 @@
                     </div>
 
                     <!-- Navbar titles: -->
-                    <div class="my-3">
+                    <div class="my-6">
 
                         <span class="text-sm opacity-80">Change the pages as you want.</span>
 
@@ -76,6 +76,7 @@
                             <input type="text" name="navbarPage2" id="navbarPage2" class="border rounded-md p-2 m-2 w-full" placeholder="About">
                             <input type="text" name="navbarPage3" id="navbarPage3" class="border rounded-md p-2 m-2 w-full" placeholder="Contact">
                             <input type="text" name="navbarPage4" id="navbarPage4" class="border rounded-md p-2 m-2 w-full" placeholder="Pricing">
+                            <input type="text" name="navbarPage5" id="navbarPage5" class="border rounded-md p-2 m-2 w-full" placeholder="Members">
                         </div>
 
                     </div>

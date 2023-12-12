@@ -69,6 +69,7 @@ var navbarPage1 = document.getElementById('navbarPage1');
 var navbarPage2 = document.getElementById('navbarPage2');
 var navbarPage3 = document.getElementById('navbarPage3');
 var navbarPage4 = document.getElementById('navbarPage4');
+var navbarPage5 = document.getElementById('navbarPage5');
 
 websiteNameInput.addEventListener('input', function() {
     submitForm();
@@ -109,6 +110,10 @@ navbarPage3.addEventListener('input', function() {
 });
 
 navbarPage4.addEventListener('input', function() {
+    submitForm();
+});
+
+navbarPage5.addEventListener('input', function() {
     submitForm();
 });
 
