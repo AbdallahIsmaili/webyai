@@ -44,6 +44,10 @@ function generateNavbar($websiteName, $includeLogo = false, $logoUploaded = fals
 }
 
 
+function generateHero(){
+    
+}
+
 // Example usage:
 
 
