@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,10 +22,11 @@
         }
     </script>
 
+
 </head>
-<body class="bg-stone-200">
+<body class="bg-gradient-to-r from-stone-100 via-stone-300 to-pink-300">
     
-    <div class=" mx-auto px-4">
+    <div class=" mx-20 px-4">
 
         <div class="bg-white my-3 rounded-xl p-6">
             <span class="font-bold">Welcome here!</span> let's start building your great website.
@@ -43,8 +43,11 @@
             </div>
 
             <div id="webResult" class=" bg-white col-span-3 rounded-lg p-6">
-                
             </div>
+
+            <!-- <div class=" bg-white col-span-3 rounded-lg p-6">
+                <iframe src="../index.php" width="100%" height="100%" frameborder="0"></iframe>
+            </div> -->
 
         </div>
 
