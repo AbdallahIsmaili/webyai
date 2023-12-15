@@ -28,23 +28,34 @@
 </div>
 
 <script>
-    // Function to refresh the content of the text file
+    // Function to check if the file is empty
+    function isFileEmpty(content) {
+        return content.trim() === '';
+    }
+
+    // Function to refresh the content of the HTML file
     function refreshContent() {
         const filename = 'liveExample.txt';
         const fileContentElement = document.getElementById('fileContent');
 
-        // Fetch the content of the text file
+        // Fetch the content of the HTML file
         fetch(filename)
             .then(response => response.text())
             .then(content => {
-                fileContentElement.innerHTML = content;
+                if (isFileEmpty(content)) {
+                    fileContentElement.innerHTML = '';
+
+                } else {
+                    fileContentElement.innerHTML = content;
+                }
             })
             .catch(error => {
                 console.error('Error fetching file content:', error);
             });
     }
 
-    setInterval(refreshContent, 500);
+    // Set interval to refresh the content every 1.5 seconds (1500 milliseconds)
+    setInterval(refreshContent, 300);
 
 </script>
     
