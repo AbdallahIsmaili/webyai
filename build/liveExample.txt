@@ -1,0 +1,6 @@
+<nav style="background:#f1f5f9;" class="flex justify-between items-center p-4 xl:my-3 xl:p-6">
+                        <div class="logo flex justify-between items-center ">
+            <span class="text-xl antialiased font-extrabold">hello</span></div>
+
+                        <ul class="xl:flex lg:flex md:flex xl:justify-between lg:justify-between md:justify-between xl:items-center lg:items-center md:items-center hidden w-[75%] xl:w-[50%] xl:text-md md:text-sm antialiased font-normal"> </ul> <i class="text-white sm:block xl:hidden lg:hidden md:hidden py-2 xl:px-12 lg:px-10 px-8 bg-gray-900 rounded-lg hover:bg-gray-700 transition ease-in-out duration-500">More</i>
+        </nav>

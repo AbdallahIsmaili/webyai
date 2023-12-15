@@ -66,7 +66,7 @@ $navbarBackgroundColor = null;
 
 $buttonChecked = false;
 
-if ( isset($_POST['create_website']) or ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['website_name']))) {
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['website_name'])) {
     
     if(isset($_POST['website_name']) and $_POST['website_name'] != null){
         $websiteName = $_POST['website_name'];
@@ -144,6 +144,25 @@ if ( isset($_POST['create_website']) or ($_SERVER['REQUEST_METHOD'] === 'POST' &
 
     $navbar = generateNavbar($websiteName, true, $logoUploaded, $navbarLogoFile, $navbarPagesArray, $buttonChecked, $activeLinkContent, $activeLinkColor, $navbarBackgroundColor);
     echo $navbar;
+
+    $filePath = "liveExample.txt";
+
+    // Open the file for writing (create if not exists)
+    $file = fopen($filePath, "w");
+
+    // Check if the file was opened successfully
+    if ($file) {
+        // Write variables to the file
+        fwrite($file, $navbar . "\n");
+
+        // Close the file
+        fclose($file);
+
+        echo "Variables have been written to the file.";
+    } else {
+        echo "Unable to open the file for writing.";
+    }
+
 }
 
 if(isset($_POST['create_website'])){
