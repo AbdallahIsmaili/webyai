@@ -1,6 +1,20 @@
-<nav style="background:#f1f5f9;" class="flex justify-between items-center p-4 xl:my-3 xl:p-6">
-                        <div class="logo flex justify-between items-center ">
-            <span class="text-xl antialiased font-extrabold">hello</span></div>
+<nav style="background:#0080ff;" class="flex justify-between items-center p-4 xl:my-3 xl:p-6">
+                        <div class="logo flex justify-between items-center "><img src="uploads/blogging.png " alt="logo" class="mx-2 w-[40px] rounded-lg">
+            <span class="text-xl antialiased font-extrabold">HelloWorld</span></div><ul class="xl:flex lg:flex md:flex xl:justify-between lg:justify-between md:justify-between xl:items-center lg:items-center md:items-center hidden w-[75%] xl:w-[50%] xl:text-md md:text-sm antialiased font-normal"><li class="opacity-80 hover:opacity-90 transition ease-in-out duration-300">
+                                <a href="" class="font-medium">Home</a>
+                            </li><li class="opacity-80 hover:opacity-90 transition ease-in-out duration-300">
+                                <a href="" class="font-medium">About us</a>
+                            </li><li class="opacity-80 hover:opacity-90 transition ease-in-out duration-300">
+                                <a href="" class="font-medium">Contact</a>
+                            </li><li class="opacity-80 hover:opacity-90 transition ease-in-out duration-300">
+                                <a href="" class="font-medium">Pricing</a>
+                            </li>
+                    <li>
+                        <a style="background: #000000;" href="build/builder.php" class="text-white xl:py-3 lg:py-3 py-2 xl:px-12 lg:px-10 px-8 bg-gray-900 rounded-lg hover:bg-gray-700 transition ease-in-out duration-500">Try now</a>
+                    </li> </ul> <i class="text-white sm:block xl:hidden lg:hidden md:hidden py-2 xl:px-12 lg:px-10 px-8 bg-gray-900 rounded-lg hover:bg-gray-700 transition ease-in-out duration-500">More</i></nav><style>
+    
+                        body{
+                            background: #0080ff;
+                        }
 
-                        <ul class="xl:flex lg:flex md:flex xl:justify-between lg:justify-between md:justify-between xl:items-center lg:items-center md:items-center hidden w-[75%] xl:w-[50%] xl:text-md md:text-sm antialiased font-normal"> </ul> <i class="text-white sm:block xl:hidden lg:hidden md:hidden py-2 xl:px-12 lg:px-10 px-8 bg-gray-900 rounded-lg hover:bg-gray-700 transition ease-in-out duration-500">More</i>
-        </nav>
+                    </style>

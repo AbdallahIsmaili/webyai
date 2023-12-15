@@ -278,6 +278,8 @@ var navbarActiveLink = document.getElementById('navbarActiveLink');
 var activeLinkContent = document.getElementById('activeLinkContent');
 var activeLinkColor = document.getElementById('activeLinkColor');
 var navbarBackgroundColor = document.getElementById('navbarBackgroundColor');
+var bodyColor = document.getElementById('bodyColor');
+var bodyMatchNavColor = document.getElementById('bodyMatchNavColor');
 
 websiteNameInput.addEventListener('input', function() {
     submitForm();
@@ -343,6 +345,17 @@ activeLinkColor.addEventListener('input', function() {
 });
 
 navbarBackgroundColor.addEventListener('input', function() {
+    submitForm();
+});
+
+bodyColor.addEventListener('input', function() {
+    submitForm();
+});
+
+bodyMatchNavColor.addEventListener('change', function(){
+    if (bodyMatchNavColor.checked) {
+        bodyColor.value = navbarBackgroundColor.value;
+    } 
     submitForm();
 });
 

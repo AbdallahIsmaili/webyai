@@ -67,9 +67,18 @@
 
 
     <!-- Navbar Background color: -->
-    <div id="navbarActiveLink " class="my-6">
+    <div id="navbarBackgroundColorDiv" class="my-6">
         <span class="text-lg opacity-80 py-4">Navbar background color?</span>
         <input class="border w-full rounded-lg my-3" type="color" value="#f1f5f9" name="navbarBackgroundColor" id="navbarBackgroundColor">
+
+        <span class="text-lg opacity-80 py-4">Adapt your body background color:</span>
+        <input class="border w-full rounded-lg my-3" type="color" value="#ffffff" name="bodyColor" id="bodyColor">
+
+        <span class="text-lg opacity-80 py-4">make body color match navbar:</span>
+        <div class="inline-block py-1 px-6 bg-gray-900 rounded-sm">
+        <input type="checkbox" name="bodyMatchNavColor" id="bodyMatchNavColor">
+        <span class="text-sm text-white opacity-80 pl-3">Sure</span>
+    </div>
 
     </div>
 

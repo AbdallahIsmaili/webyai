@@ -21,9 +21,9 @@
     </script>
 
 </head>
-<body class="bg-gradient-to-r from-stone-100 via-stone-300 to-pink-300">
+<body class="container mx-auto max-w-[1280px] bg-gradient-to-r from-stone-100 via-stone-300 to-pink-300">
     
-    <div class="container mx-auto px-4">
+    <div class="">
         <nav class="flex justify-between items-center p-4 xl:my-3 xl:p-6">
             <div class="logo flex justify-between items-center ">
                 <img src="img/webyai_logo.png" alt="logo" class="mx-2 w-[40px] rounded-lg">
