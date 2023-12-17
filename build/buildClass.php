@@ -72,6 +72,7 @@ $navbarPage2 = null;
 $navbarPage3 = null;
 $navbarPage4 = null;
 $navbarPage5 = null;
+$navbarPage6 = null;
 $activeLinkContent = 'Get started';
 $activeLinkColor = null;
 $navbarBackgroundColor = null;
@@ -131,6 +132,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['website_name'])) {
     if(isset($_POST['navbarPage5']) and $_POST['navbarPage5'] != null){
         $navbarPage5 = $_POST['navbarPage5'];
         $navbarPagesArray[] = $navbarPage5;
+    } 
+
+    if(isset($_POST['navbarPage6']) and $_POST['navbarPage6'] != null){
+        $navbarPage6 = $_POST['navbarPage6'];
+        $navbarPagesArray[] = $navbarPage6;
     } 
 
 

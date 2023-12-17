@@ -32,17 +32,25 @@
 
     <!-- Navbar pages: -->
     <div class="my-6">
+        <span class="text-sm opacity-80">Change the nav elements as you want (3-6 elements).</span>
 
-        <span class="text-sm opacity-80">Change the pages as you want.</span>
-
-        <div class="">
-            <input type="text" name="navbarPage1" id="navbarPage1" class="border rounded-md p-2 m-2 w-full" placeholder="Home">
-            <input type="text" name="navbarPage2" id="navbarPage2" class="border rounded-md p-2 m-2 w-full" placeholder="About">
-            <input type="text" name="navbarPage3" id="navbarPage3" class="border rounded-md p-2 m-2 w-full" placeholder="Contact">
-            <input type="text" name="navbarPage4" id="navbarPage4" class="border rounded-md p-2 m-2 w-full" placeholder="Pricing">
-            <input type="text" name="navbarPage5" id="navbarPage5" class="border rounded-md p-2 m-2 w-full" placeholder="Members">
+        <div id="inputsPagesLinksContainer">
+            <!-- Initial inputs -->
+            <div class="input-container">
+                <input type="text" name="navbarPage1" class="border rounded-md p-2 mt-2 w-full" placeholder="Home">
+                <button type="button" class="delete-btn text-red-500 text-sm" onclick="deleteInput(this); submitForm()">Remove</button>
+            </div>
+            <div class="input-container">
+                <input type="text" name="navbarPage2" class="border rounded-md p-2 mt-2 w-full" placeholder="About">
+                <button type="button" class="delete-btn text-red-500 text-sm" onclick="deleteInput(this); submitForm()">Remove</button>
+            </div>
+            <div class="input-container">
+                <input type="text" name="navbarPage3" class="border rounded-md p-2 mt-2 w-full" placeholder="Contact">
+                <button type="button" class="delete-btn text-red-500 text-sm" onclick="deleteInput(this); submitForm()">Remove</button>
+            </div>
         </div>
 
+        <button type="button" onclick="addInput(); submitForm()" class="btn py-2 rounded-md px-8 bg-gray-100 my-3">Add another nav element</button>
     </div>
 
     <!-- Navbar Checkbox: -->
@@ -84,3 +92,61 @@
 
     <button type="submit" name="create_website">Create</button>
 </form>
+
+<script>
+
+    var inputsPagesLinksContainer = document.getElementById('inputsPagesLinksContainer');
+
+    inputsPagesLinksContainer.addEventListener('input', function(event) {
+        if (event.target.tagName === 'INPUT') {
+            submitForm();
+        }
+    });
+
+
+    function addInput() {
+        var container = document.getElementById('inputsPagesLinksContainer');
+
+        // Check if the maximum number of inputs is reached
+        if (container.children.length >= 6) {
+            alert('Maximum number of inputs reached (6)');
+            return;
+        }
+
+        var newInput = document.createElement('div');
+        newInput.className = 'input-container';
+
+        var input = document.createElement('input');
+        input.type = 'text';
+        input.name = 'navbarPage' + (container.children.length + 1);
+        input.className = 'border rounded-md p-2 mt-2 w-full';
+        input.placeholder = 'New Page Link';
+
+        var deleteBtn = document.createElement('button');
+        deleteBtn.type = 'button';
+        deleteBtn.className = 'delete-btn text-red-500 text-sm';
+        deleteBtn.textContent = 'Remove';
+        deleteBtn.onclick = function () {
+            deleteInput(this);
+        };
+
+        newInput.appendChild(input);
+        newInput.appendChild(deleteBtn);
+
+        container.appendChild(newInput);
+    }
+
+    function deleteInput(button) {
+        var container = document.getElementById('inputsPagesLinksContainer');
+        var inputContainer = button.parentNode;
+
+        // Check if the minimum number of inputs is reached
+        if (container.children.length <= 3) {
+            alert('Minimum number of inputs reached (3)');
+            return;
+        }
+
+        container.removeChild(inputContainer);
+    }
+</script>
+
