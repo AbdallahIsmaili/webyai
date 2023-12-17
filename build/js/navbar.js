@@ -274,14 +274,11 @@
     var navbarPage4 = document.getElementById('navbarPage4');
     var navbarPage5 = document.getElementById('navbarPage5');
     var navbarPage6 = document.getElementById('navbarPage6');
-    var isActiveButton = document.getElementById('isActiveButton');
     var navbarActiveLink = document.getElementById('navbarActiveLink');
+    var isActiveButton = document.getElementById('isActiveButton');
     var activeLinkContent = document.getElementById('activeLinkContent');
     var activeLinkColor = document.getElementById('activeLinkColor');
-    var navbarBackgroundColor = document.getElementById('navbarBackgroundColor');
-    var bodyColor = document.getElementById('bodyColor');
-    var bodyMatchNavColor = document.getElementById('bodyMatchNavColor');
-    
+
 
     websiteNameInput.addEventListener('input', function() {
         submitForm();
@@ -305,6 +302,11 @@
         submitForm();
     });
 
+    navbarLogoFileInput.addEventListener('change', function() {
+        submitForm();
+    });
+
+    
     isActiveButton.addEventListener('change', function() {
         if (isActiveButton.checked) {
             navbarActiveLink.style.display = 'block';
@@ -314,7 +316,11 @@
         submitForm();
     });
 
-    navbarLogoFileInput.addEventListener('change', function() {
+    activeLinkContent.addEventListener('input', function() {
+        submitForm();
+    });
+
+    activeLinkColor.addEventListener('input', function() {
         submitForm();
     });
 
@@ -341,31 +347,6 @@
     navbarPage6.addEventListener('input', function() {
         submitForm();
     });
-
-    activeLinkContent.addEventListener('input', function() {
-        submitForm();
-    });
-
-    activeLinkColor.addEventListener('input', function() {
-        submitForm();
-    });
-
-    navbarBackgroundColor.addEventListener('input', function() {
-        submitForm();
-    });
-
-    bodyColor.addEventListener('input', function() {
-        submitForm();
-    });
-
-    bodyMatchNavColor.addEventListener('change', function(){
-        if (bodyMatchNavColor.checked) {
-            bodyColor.value = navbarBackgroundColor.value;
-        } 
-        submitForm();
-    });
-
-
 
     function submitForm() {
         // Use FormData to handle file uploads

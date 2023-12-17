@@ -1,5 +1,5 @@
 
-<form id="navbarBuildingForm" action="buildClass.php" method="post" enctype="multipart/form-data" class="bg-white rounded-lg p-4 my-6">
+<form id="navbarBuildingForm" action="buildClass.php" method="post" enctype="multipart/form-data" class="bg-white rounded-sm p-4 mb-6">
 
     <h4 class="text-2xl font-bold">Start by the Navbar:</h4>
     <br>
@@ -96,6 +96,13 @@
 <script>
 
     var inputsPagesLinksContainer = document.getElementById('inputsPagesLinksContainer');
+    var navbarBuildingForm = document.getElementById('navbarBuildingForm');
+    var navbarBackgroundColor = document.getElementById('navbarBackgroundColor');
+    var bodyColor = document.getElementById('bodyColor');
+    var bodyMatchNavColor = document.getElementById('bodyMatchNavColor');
+    var isActiveButton = document.getElementById('isActiveButton');
+    var activeLinkContent = document.getElementById('activeLinkContent');
+    var activeLinkColor = document.getElementById('activeLinkColor');
 
     inputsPagesLinksContainer.addEventListener('input', function(event) {
         if (event.target.tagName === 'INPUT') {
@@ -103,6 +110,41 @@
         }
     });
 
+    navbarBackgroundColor.addEventListener('input', function() {
+        submitForm();
+    });
+
+    bodyColor.addEventListener('input', function() {
+        submitForm();
+    });
+
+    bodyMatchNavColor.addEventListener('change', function(){
+        if (bodyMatchNavColor.checked) {
+            bodyColor.value = navbarBackgroundColor.value;
+        } 
+        submitForm();
+    });
+
+    navbarBuildingForm.addEventListener('click', function(event) {
+            submitForm();
+    });
+
+    isActiveButton.addEventListener('change', function() {
+        if (isActiveButton.checked) {
+            navbarActiveLink.style.display = 'block';
+        } else {
+            navbarActiveLink.style.display = 'none';
+        }
+        submitForm();
+    });
+
+    activeLinkContent.addEventListener('input', function() {
+        submitForm();
+    });
+
+    activeLinkColor.addEventListener('input', function() {
+        submitForm();
+    });
 
     function addInput() {
         var container = document.getElementById('inputsPagesLinksContainer');

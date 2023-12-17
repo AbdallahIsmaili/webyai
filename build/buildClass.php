@@ -42,6 +42,14 @@ function generateNavbar($websiteName, $includeLogo = false, $logoUploaded = fals
         $navbarHTML .= ' </ul> <i class="text-white sm:block xl:hidden lg:hidden md:hidden py-2 xl:px-12 lg:px-10 px-8 bg-gray-900 rounded-lg hover:bg-gray-700 transition ease-in-out duration-500">More</i>';
     }
 
+    if($buttonChecked and empty($navbarPagesArray)){
+
+        $navbarHTML .= '
+                
+                    <a style="background: '. $activeLinkColor .';" href="build/builder.php" class="text-white xl:py-3 lg:py-3 py-2 xl:px-12 lg:px-10 px-8 bg-gray-900 rounded-lg hover:bg-gray-700 transition ease-in-out duration-500">'.$activeLinkContent.'</a>
+                ';
+    }
+
     $navbarHTML .= '</nav>';
     
     $navbarHTML .= '<style>
