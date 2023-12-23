@@ -60,14 +60,14 @@
 
         <div class="mb-2">
         
-            <div class="mx-40 mt-24 text-center">
-                <h1 class="text-7xl font-extrabold">Effortlessly create modern website with zero code.</h1>
-                <p class="mx-52 my-4 font-medium opacity-80">Unleash your creativity with our intuitive website builder! Craft personalized <span class="text-blue-800"> Landing pages, E-commerce sites, Blogs, and Portfolios effortlessly </span>, powered by Tailwind CSS for a seamless online presence.</p>
+            <div class="xl:mx-40 lg:mx-24 md:mx-16 sm:mx-16 mx-8 xl:mt-24 lg:mt-20 mt-20 text-center">
+                <h1 class="xl:text-7xl lg:text-7xl md:text-6xl sm:text-6xl text-5xl font-extrabold">Effortlessly create modern website with zero code.</h1>
+                <p class="xl:mx-52 lg:mx-36 md:mx-20 sm:mx-20 mx-12 mt-4 mb-12 xl:font-medium lg:text-sm md:text-sm sm:text-sm text-xs opacity-80">Unleash your creativity with our intuitive website builder! Craft personalized <span class="text-blue-800"> Landing pages, E-commerce sites, Blogs, and Portfolios effortlessly </span>, powered by Tailwind CSS for a seamless online presence.</p>
 
-                <div class="m-8">
-                    <button class="py-3 px-10 rounded-lg bg-black text-white hover:opacity-80 transition ease-in-out duration-500"> <a href="" class="font-medium text-md">Build Effortlessly Now</a> </button>
+                <div class="xl:m-8 lg:m-8 md:m-8 m-6">
+                    <button class="xl:py-3 lg:py-3 py-2 xl:px-10 lg:px-8 md:px-6 sm:px-6 px-4 rounded-lg bg-black text-white hover:opacity-80 transition ease-in-out duration-500"> <a href="" class="font-medium xl:text-md lg:text-md md:text-sm sm:text-sm text-xs">Build Effortlessly Now</a> </button>
 
-                    <button class="py-3 px-10 rounded-lg text-black hover:underline hover:underline-offset-2 transition ease-in-out duration-300"> <a href="" class="font-medium text-md">Exploring?</a> </button>
+                    <button class="xl:mx-10 lg:mx-10 md:mx-8 sm:mx-6 text-black hover:underline hover:underline-offset-2 transition ease-in-out duration-300"> <a href="" class="font-medium xl:text-md lg:text-md md:text-sm sm:text-sm text-xs">Exploring?</a> </button>
 
                 </div>
 
@@ -76,25 +76,29 @@
         </div>
 
         <!-- CARDS: -->
-        <div class="flex justify-center items-center flex-wrap mt-6 ">
+        <div class="flex justify-center items-center flex-wrap mt-6 mx-6 ">
 
-            <div class="bg-stone-100 opacity-95 shadow-md w-[150px] mx-2 my-7 cursor-pointer p-6 h-36 rounded-lg text-center">
+            <div class="bg-stone-100 opacity-95 shadow-md xl:w-[150px] lg:w-[170px] md:w-[200px] sm:w-[200px] w-80 mx-2 my-2 cursor-pointer p-6 xl:h-36 lg:h-40 md:h-44 h-44 rounded-lg text-center">
                 <span class="opacity-80 font-medium text-sm">Landing page</span>
                 <img src="img/icons/landing-page.png" alt="" class="w-16 my-4 mx-auto">
             </div>
-            <div class="bg-stone-100 opacity-95 shadow-md w-[150px] mx-2 my-7 cursor-pointer p-6 h-36 rounded-lg text-center">
+
+            <div class="bg-stone-100 opacity-95 shadow-md xl:w-[150px] lg:w-[170px] md:w-[200px] sm:w-[200px] w-80 mx-2 my-2 cursor-pointer p-6 xl:h-36 lg:h-40 md:h-44 h-44 rounded-lg text-center">
                 <span class="opacity-80 font-medium text-sm">E-commerce</span>
                 <img src="img/icons/website.png" alt="" class="w-16 my-4 mx-auto">
             </div>
-            <div class="bg-stone-100 opacity-95 shadow-md w-[150px] mx-2 my-7 cursor-pointer p-6 h-36 rounded-lg text-center">
+
+            <div class="bg-stone-100 opacity-95 shadow-md xl:w-[150px] lg:w-[170px] md:w-[200px] sm:w-[200px] w-80 mx-2 my-2 cursor-pointer p-6 xl:h-36 lg:h-40 md:h-44 h-44 rounded-lg text-center">
                 <span class="opacity-80 font-medium text-sm">Blog</span>
                 <img src="img/icons/blogging.png" alt="" class="w-16 my-4 mx-auto">
             </div>
-            <div class="bg-stone-100 opacity-95 shadow-md w-[150px] mx-2 my-7 cursor-pointer p-6 h-36 rounded-lg text-center">
+
+            <div class="bg-stone-100 opacity-95 shadow-md xl:w-[150px] lg:w-[170px] md:w-[200px] sm:w-[200px] w-80 mx-2 my-2 cursor-pointer p-6 xl:h-36 lg:h-40 md:h-44 h-44 rounded-lg text-center">
                 <span class="opacity-80 font-medium text-sm">Portfolio</span>
                 <img src="img/icons/application.png" alt="" class="w-16 my-4 mx-auto">
             </div>
-            <div class="bg-stone-100 opacity-95 shadow-md w-[150px] mx-2 my-7 cursor-pointer p-6 h-36 rounded-lg text-center">
+
+            <div class="bg-stone-100 opacity-95 shadow-md xl:w-[150px] lg:w-[170px] md:w-[200px] sm:w-[200px] w-80 mx-2 my-2 cursor-pointer p-6 xl:h-36 lg:h-40 md:h-44 h-44 rounded-lg text-center">
                 <span class="opacity-80 font-medium text-sm">Dashboard</span>
                 <img src="img/icons/data-analysis.png" alt="" class="w-16 my-4 mx-auto">
             </div>
