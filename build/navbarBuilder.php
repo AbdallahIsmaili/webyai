@@ -10,6 +10,13 @@
     <input type="text" name="website_name" id="websiteName" class="rounded-lg w-full p-2 border" placeholder="Example: webyai" required>
 
     <br>
+    
+    <span class="text-xs opacity-80 mt-1">Choose text color:</span>
+
+    <br>
+
+    <input type="color" name="website_name_color" id="websiteNameColor" class="rounded-lg w-1/6 h-12" value="#000000">
+    <br>
     <br>
     
     <span class="text-sm opacity-80">Do you want to add a logo?</span>
@@ -51,6 +58,14 @@
         </div>
 
         <button type="button" onclick="addInput(); submitForm()" class="btn py-2 rounded-md px-8 bg-gray-100 my-3">Add another nav element</button>
+
+        <br>
+        <span class="text-xs opacity-80 mt-2">Choose text color:</span>
+
+        <br>
+
+        <input type="color" name="navbarPageTextColor" id="navbarPageTextColor" class="rounded-lg w-1/6 h-12" value="#000000">
+
     </div>
 
     <!-- Navbar Checkbox: -->
@@ -68,8 +83,15 @@
             <input type="text" name="activeLinkContent" id="activeLinkContent" class="border rounded-md p-2 m-2 w-full" placeholder="Get started">
         </div>
 
-        <span class="text-sm opacity-80 pl-3">Choose the color:</span>
-        <input class="border w-full rounded-lg" type="color" name="activeLinkColor" id="activeLinkColor">
+        <span class="text-sm opacity-80 pl-3">Choose button color:</span>
+        <input class="border w-full rounded-lg" type="color" name="activeLinkColor" id="activeLinkColor" value="#000000">
+
+        <br>
+        <span class="text-xs opacity-80 mt-2 pl-3">Choose text color:</span>
+
+        <br>
+
+        <input type="color" name="activeLinkContentTextColor" id="activeLinkContentTextColor" class="rounded-lg w-1/6 h-12" value="#ffffff">
 
     </div>
 
@@ -103,6 +125,9 @@
     var isActiveButton = document.getElementById('isActiveButton');
     var activeLinkContent = document.getElementById('activeLinkContent');
     var activeLinkColor = document.getElementById('activeLinkColor');
+    var websiteNameColor = document.getElementById('websiteNameColor');
+    var navbarPageTextColor = document.getElementById('navbarPageTextColor');
+    var activeLinkContentTextColor = document.getElementById('activeLinkContentTextColor');
 
     inputsPagesLinksContainer.addEventListener('input', function(event) {
         if (event.target.tagName === 'INPUT') {
@@ -111,6 +136,18 @@
     });
 
     navbarBackgroundColor.addEventListener('input', function() {
+        submitForm();
+    });
+
+    websiteNameColor.addEventListener('input', function() {
+        submitForm();
+    });
+
+    navbarPageTextColor.addEventListener('input', function() {
+        submitForm();
+    });
+
+    activeLinkContentTextColor.addEventListener('input', function() {
         submitForm();
     });
 

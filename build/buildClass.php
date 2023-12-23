@@ -2,7 +2,7 @@
 
 $navbarPagesArray = [];
 
-function generateNavbar($websiteName, $includeLogo = false, $logoUploaded = false, $navbarLogoFile, $navbarPagesArray, $buttonChecked = false,  $activeLinkContent, $activeLinkColor, $navbarBackgroundColor, $bodyColor) {
+function generateNavbar($websiteName, $includeLogo = false, $logoUploaded = false, $navbarLogoFile, $navbarPagesArray, $buttonChecked = false,  $activeLinkContent, $activeLinkColor, $navbarBackgroundColor, $bodyColor, $websiteNameColor, $navbarPageTextColor, $activeLinkContentTextColor) {
     
     $navbarHTML = '<nav style="background:'. $navbarBackgroundColor .';" class="flex justify-between items-center p-4 xl:my-3 xl:p-6">
                         <div class="logo flex justify-between items-center ">';
@@ -13,7 +13,7 @@ function generateNavbar($websiteName, $includeLogo = false, $logoUploaded = fals
 
     if ($includeLogo) {
         $navbarHTML .= '
-            <span class="text-xl antialiased font-extrabold">' . $websiteName . '</span>';
+            <span style="color:'. $websiteNameColor .';" class="text-xl antialiased font-extrabold">' . $websiteName . '</span>';
     } else {
         $navbarHTML .= '<span class="text-xl antialiased font-extrabold"></span>'; 
     }
@@ -26,7 +26,7 @@ function generateNavbar($websiteName, $includeLogo = false, $logoUploaded = fals
 
         foreach ($navbarPagesArray as $navbarPage) {
             $navbarHTML .= '<li class="opacity-80 hover:opacity-90 transition ease-in-out duration-300">
-                                <a href="" class="font-medium">'.$navbarPage.'</a>
+                                <a style="color: '. $navbarPageTextColor .';" href="" class="font-medium">'.$navbarPage.'</a>
                             </li>';
         }
 
@@ -35,7 +35,7 @@ function generateNavbar($websiteName, $includeLogo = false, $logoUploaded = fals
 
             $navbarHTML .= '
                     <li>
-                        <a style="background: '. $activeLinkColor .';" href="build/builder.php" class="text-white xl:py-3 lg:py-3 py-2 xl:px-12 lg:px-10 px-8 bg-gray-900 rounded-lg hover:bg-gray-700 transition ease-in-out duration-500">'.$activeLinkContent.'</a>
+                        <a style="background: '. $activeLinkColor .'; color: '. $activeLinkContentTextColor .' ;" href="build/builder.php" class="text-white xl:py-3 lg:py-3 py-2 xl:px-12 lg:px-10 px-8 bg-gray-900 rounded-lg hover:bg-gray-700 transition ease-in-out duration-500">'.$activeLinkContent.'</a>
                     </li>';
         }
 
@@ -85,6 +85,9 @@ $activeLinkContent = 'Get started';
 $activeLinkColor = null;
 $navbarBackgroundColor = null;
 $bodyColor = null;
+$websiteNameColor = null;
+$navbarPageTextColor = null;
+$activeLinkContentTextColor = null;
 
 $buttonChecked = false;
 
@@ -115,6 +118,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['website_name'])) {
     
     if(isset($_POST['bodyColor']) and $_POST['bodyColor'] != null){
         $bodyColor = $_POST['bodyColor'];
+    }
+    
+    if(isset($_POST['website_name_color']) and $_POST['website_name_color'] != null){
+        $websiteNameColor = $_POST['website_name_color'];
+    }
+    
+    if(isset($_POST['navbarPageTextColor']) and $_POST['navbarPageTextColor'] != null){
+        $navbarPageTextColor = $_POST['navbarPageTextColor'];
+    }
+    
+    if(isset($_POST['activeLinkContentTextColor']) and $_POST['activeLinkContentTextColor'] != null){
+        $activeLinkContentTextColor = $_POST['activeLinkContentTextColor'];
     }
 
     if(isset($_POST['navbarPage1']) and $_POST['navbarPage1'] != null){
@@ -171,7 +186,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['website_name'])) {
 
     echo $navbarLogoFile;
 
-    $navbar = generateNavbar($websiteName, true, $logoUploaded, $navbarLogoFile, $navbarPagesArray, $buttonChecked, $activeLinkContent, $activeLinkColor, $navbarBackgroundColor, $bodyColor);
+    $navbar = generateNavbar($websiteName, true, $logoUploaded, $navbarLogoFile, $navbarPagesArray, $buttonChecked, $activeLinkContent, $activeLinkColor, $navbarBackgroundColor, $bodyColor, $websiteNameColor, $navbarPageTextColor, $activeLinkContentTextColor);
     echo $navbar;
 
     $filePath = "liveExample.txt";
