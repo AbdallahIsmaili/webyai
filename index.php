@@ -21,9 +21,10 @@
     </script>
 
 </head>
-<body class="container mx-auto max-w-[1280px] bg-gradient-to-r from-stone-100 via-stone-300 to-pink-300">
+<body class="container mx-auto max-w-[1280px] bg-gradient-to-r from-stone-100 via-stone-300 to-pink-300" >
     
-    <div class="">
+    <div>
+
         <nav class="flex justify-between items-center p-4 xl:my-3 xl:p-6">
             <div class="logo flex justify-between items-center ">
                 <img src="img/webyai_logo.png" alt="logo" class="mx-2 w-[40px] rounded-lg">
@@ -59,19 +60,19 @@
         <!-- HERO: -->
 
         <div class="mb-2">
-        
-            <div class="xl:mx-40 lg:mx-24 md:mx-16 sm:mx-16 mx-8 xl:mt-24 lg:mt-20 mt-20 text-center">
-                <h1 class="xl:text-7xl lg:text-7xl md:text-6xl sm:text-6xl text-5xl font-extrabold">Effortlessly create modern website with zero code.</h1>
-                <p class="xl:mx-52 lg:mx-36 md:mx-20 sm:mx-20 mx-12 mt-4 mb-12 xl:font-medium lg:text-sm md:text-sm sm:text-sm text-xs opacity-80">Unleash your creativity with our intuitive website builder! Craft personalized <span class="text-blue-800"> Landing pages, E-commerce sites, Blogs, and Portfolios effortlessly </span>, powered by Tailwind CSS for a seamless online presence.</p>
+            
+                <div class="xl:mx-40 lg:mx-24 md:mx-16 sm:mx-16 mx-8 xl:mt-24 lg:mt-20 mt-20 text-center">
+                    <h1 class="xl:text-7xl lg:text-7xl md:text-6xl sm:text-6xl text-5xl font-extrabold">Effortlessly create modern website with zero code.</h1>
+                    <p class="xl:mx-52 lg:mx-36 md:mx-20 sm:mx-20 mx-12 mt-4 mb-12 xl:font-medium lg:text-sm md:text-sm sm:text-sm text-xs opacity-80">Unleash your creativity with our intuitive website builder! Craft personalized <span class="text-blue-800"> Landing pages, E-commerce sites, Blogs, and Portfolios effortlessly </span>, powered by Tailwind CSS for a seamless online presence.</p>
 
-                <div class="xl:m-8 lg:m-8 md:m-8 m-6">
-                    <button class="xl:py-3 lg:py-3 py-2 xl:px-10 lg:px-8 md:px-6 sm:px-6 px-4 rounded-lg bg-black text-white hover:opacity-80 transition ease-in-out duration-500"> <a href="" class="font-medium xl:text-md lg:text-md md:text-sm sm:text-sm text-xs">Build Effortlessly Now</a> </button>
+                    <div class="xl:m-8 lg:m-8 md:m-8 m-6">
+                        <button class="xl:py-3 lg:py-3 py-2 xl:px-10 lg:px-8 md:px-6 sm:px-6 px-4 rounded-lg bg-black text-white hover:opacity-80 transition ease-in-out duration-500"> <a href="" class="font-medium xl:text-md lg:text-md md:text-sm sm:text-sm text-xs">Build Effortlessly Now</a> </button>
 
-                    <button class="xl:mx-10 lg:mx-10 md:mx-8 sm:mx-6 text-black hover:underline hover:underline-offset-2 transition ease-in-out duration-300"> <a href="" class="font-medium xl:text-md lg:text-md md:text-sm sm:text-sm text-xs">Exploring?</a> </button>
+                        <button class="xl:mx-10 lg:mx-10 md:mx-8 sm:mx-6 text-black hover:underline hover:underline-offset-2 transition ease-in-out duration-300"> <a href="" class="font-medium xl:text-md lg:text-md md:text-sm sm:text-sm text-xs">Exploring?</a> </button>
+
+                    </div>
 
                 </div>
-
-            </div>
 
         </div>
 

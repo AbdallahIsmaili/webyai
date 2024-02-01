@@ -21,9 +21,9 @@
     </script>
 
 </head>
-<body class="container mx-auto max-w-[1280px]">
+<body >
 
-<div id="fileContent" class="">
+<div id="fileContent" class=" mx-auto ">
 
 </div>
 

@@ -57,7 +57,7 @@
             <div class="h-full col-span-4">
                 <?php
                     include "navbarBuilder.php";
-                    // include "heroBuilder.php";
+                    include "heroBuilder.php";
 
                 ?>
             </div>

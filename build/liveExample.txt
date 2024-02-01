@@ -1,24 +1,40 @@
-<nav style="background:#e5f2ff;" class="flex justify-between items-center p-4 xl:my-3 xl:p-6">
-                        <div class="logo flex justify-between items-center "><img src="uploads/landing-page.png " alt="logo" class="mx-2 w-[40px] rounded-lg">
-            <span style="color:#ff0000;" class="text-xl antialiased font-extrabold">TestWeb</span></div><ul class="xl:flex lg:flex md:flex xl:justify-between lg:justify-between md:justify-between xl:items-center lg:items-center md:items-center hidden w-[75%] xl:w-[50%] xl:text-md md:text-sm antialiased font-normal"><li class="opacity-80 hover:opacity-90 transition ease-in-out duration-300">
-                                <a style="color: #80ff00;" href="" class="font-medium">Home</a>
+<nav style="background:#ffffff;" class="flex justify-between items-center p-4 xl:mb-3 xl:p-6">
+                        <div class="logo flex justify-between items-center "><img src="uploads/1969px-Laravel.svg.png " alt="logo" class="mx-2 w-[40px] rounded-lg">
+            <span style="color:#ff0000;" class="text-xl antialiased font-extrabold">Laravel</span></div><ul class="xl:flex lg:flex md:flex xl:justify-between lg:justify-between md:justify-between xl:items-center lg:items-center md:items-center hidden w-[75%] xl:w-[50%] xl:text-md md:text-sm antialiased font-normal"><li class="opacity-80 hover:opacity-90 transition ease-in-out duration-300">
+                                <a style="color: #000000;" href="" class="font-medium">Forge</a>
                             </li><li class="opacity-80 hover:opacity-90 transition ease-in-out duration-300">
-                                <a style="color: #80ff00;" href="" class="font-medium">About</a>
+                                <a style="color: #000000;" href="" class="font-medium">Vapor</a>
                             </li><li class="opacity-80 hover:opacity-90 transition ease-in-out duration-300">
-                                <a style="color: #80ff00;" href="" class="font-medium">Contact</a>
+                                <a style="color: #000000;" href="" class="font-medium">Ecosystem</a>
                             </li><li class="opacity-80 hover:opacity-90 transition ease-in-out duration-300">
-                                <a style="color: #80ff00;" href="" class="font-medium">Pricing</a>
+                                <a style="color: #000000;" href="" class="font-medium">News</a>
                             </li><li class="opacity-80 hover:opacity-90 transition ease-in-out duration-300">
-                                <a style="color: #80ff00;" href="" class="font-medium">Team</a>
+                                <a style="color: #000000;" href="" class="font-medium">Partners</a>
                             </li><li class="opacity-80 hover:opacity-90 transition ease-in-out duration-300">
-                                <a style="color: #80ff00;" href="" class="font-medium">Help</a>
+                                <a style="color: #000000;" href="" class="font-medium">Shop</a>
                             </li>
                     <li>
-                        <a style="background: #4c00ff; color: #ffffff ;" href="build/builder.php" class="text-white xl:py-3 lg:py-3 py-2 xl:px-12 lg:px-10 px-8 bg-gray-900 rounded-lg hover:bg-gray-700 transition ease-in-out duration-500">Try now</a>
+                        <a style="background: #ffffff; color: #ff0000 ;" href="build/builder.php" class="text-white xl:py-3 lg:py-3 py-2 xl:px-12 lg:px-10 px-8 bg-gray-900 rounded-lg hover:bg-gray-700 transition ease-in-out duration-500">Documentation</a>
                     </li> </ul> <i class="text-white sm:block xl:hidden lg:hidden md:hidden py-2 xl:px-12 lg:px-10 px-8 bg-gray-900 rounded-lg hover:bg-gray-700 transition ease-in-out duration-500">More</i></nav><style>
     
                         body{
-                            background: #e5f2ff;
+                            background: #ffffff;
                         }
 
                     </style>
+<div class="w-full mb-2 p-8 bg-cover bg-center" style="background-image: url();">
+        
+        <div class="xl:mx-40 lg:mx-24 md:mx-16 sm:mx-16 mx-8 xl:mt-24 lg:mt-20 mt-20 text-center max-w-[1280px]">
+            <h1 style="color: #000000 !important" class="xl:text-7xl lg:text-7xl md:text-6xl sm:text-6xl text-5xl font-extrabold">The PHP Framework for Web Artisans</h1>
+            <p class="xl:mx-52 lg:mx-36 md:mx-20 sm:mx-20 mx-12 mt-4 mb-12 xl:font-medium lg:text-sm md:text-sm sm:text-sm text-xs opacity-80">Laravel is a web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things.</p>
+
+            <div class="xl:m-8 lg:m-8 md:m-8 m-6">
+                <button class="xl:py-3 lg:py-3 py-2 xl:px-10 lg:px-8 md:px-6 sm:px-6 px-4 rounded-lg bg-black text-white hover:opacity-80 transition ease-in-out duration-500"> <a href=" class="font-medium xl:text-md lg:text-md md:text-sm sm:text-sm text-xs">Build Effortlessly Now</a> </button>
+
+                <button class="xl:mx-10 lg:mx-10 md:mx-8 sm:mx-6 text-black hover:underline hover:underline-offset-2 transition ease-in-out duration-300"> <a href=" class="font-medium xl:text-md lg:text-md md:text-sm sm:text-sm text-xs">Exploring?</a> </button>
+
+            </div>
+
+        </div>
+
+    </div>

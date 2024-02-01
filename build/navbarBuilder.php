@@ -112,9 +112,6 @@
 
     </div>
 
-    <button type="submit" name="create_website">Create</button>
-</form>
-
 <script>
 
     var inputsPagesLinksContainer = document.getElementById('inputsPagesLinksContainer');

@@ -349,10 +349,8 @@
     });
 
     function submitForm() {
-        // Use FormData to handle file uploads
         var formData = new FormData(navbarBuildingForm);
 
-        // Send an AJAX request to the server
         $.ajax({
             type: 'POST',
             url: 'buildClass.php',
@@ -360,7 +358,6 @@
             contentType: false,
             processData: false,
             success: function(response) {
-                // Update the result div with the server response
                 $('#webResult').html(response);
             },
             error: function(error) {
